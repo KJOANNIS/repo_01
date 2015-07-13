@@ -1,0 +1,966 @@
+{
+  "Cuisine": {
+    "FIELD2":"Item Name",
+    "FIELD3":"Price"
+  },
+  "african": {
+    "FIELD2":"Dibi Lamb",
+    "FIELD3":"8.25"
+  },
+  "african": {
+    "FIELD2":"Doro Wat",
+    "FIELD3":"5.95"
+  },
+  "african": {
+    "FIELD2":"Grilled Chicken",
+    "FIELD3":"4.95"
+  },
+  "african": {
+    "FIELD2":"Grilled Fish",
+    "FIELD3":"6.95"
+  },
+  "african": {
+    "FIELD2":"Grilled Plantains in Spicy Peanut Sauce",
+    "FIELD3":"7.95"
+  },
+  "african": {
+    "FIELD2":"Lamb Mafe (Peanut Butter Stew)",
+    "FIELD3":"8.75"
+  },
+  "african": {
+    "FIELD2":"Meat Pie",
+    "FIELD3":"6"
+  },
+  "african": {
+    "FIELD2":"Mechoui with Plantains",
+    "FIELD3":"5.95"
+  },
+  "african": {
+    "FIELD2":"Pepper Soup",
+    "FIELD3":"9.95"
+  },
+  "african": {
+    "FIELD2":"Piri-Piri Shrimp",
+    "FIELD3":"11.45"
+  },
+  "african": {
+    "FIELD2":"Suppa Kandja",
+    "FIELD3":"3.95"
+  },
+  "african": {
+    "FIELD2":"Thiou Boulette",
+    "FIELD3":"6.95"
+  },
+  "african": {
+    "FIELD2":"Thiou Curry with Chicken",
+    "FIELD3":"7.95"
+  },
+  "african": {
+    "FIELD2":"Thu Okra",
+    "FIELD3":"6.95"
+  },
+  "african": {
+    "FIELD2":"Yassa Chicken",
+    "FIELD3":"8.95"
+  },
+  "african": {
+    "FIELD2":"Yassa Lamb",
+    "FIELD3":"8.25"
+  },
+  "american": {
+    "FIELD2":"Buffalo wings",
+    "FIELD3":"5.95"
+  },
+  "american": {
+    "FIELD2":"California-style baked Tilapia with rice",
+    "FIELD3":"6.95"
+  },
+  "american": {
+    "FIELD2":"Cheeseburger and fries",
+    "FIELD3":"4.55"
+  },
+  "american": {
+    "FIELD2":"Cherry pie a la mode",
+    "FIELD3":"4.95"
+  },
+  "american": {
+    "FIELD2":"Chocolate milkshake",
+    "FIELD3":"6.95"
+  },
+  "american": {
+    "FIELD2":"Cobb salad",
+    "FIELD3":"4.95"
+  },
+  "american": {
+    "FIELD2":"Famous BLT on a kaiser roll with fries",
+    "FIELD3":"4.95"
+  },
+  "american": {
+    "FIELD2":"Firehouse chili",
+    "FIELD3":"6.95"
+  },
+  "american": {
+    "FIELD2":"Goat cheese and eggplant wrap (vegetarian)",
+    "FIELD3":"5.95"
+  },
+  "american": {
+    "FIELD2":"Greek salad",
+    "FIELD3":"6.95"
+  },
+  "american": {
+    "FIELD2":"Grilled chicken sandwich",
+    "FIELD3":"4.95"
+  },
+  "american": {
+    "FIELD2":"Grilled sausage on a bun",
+    "FIELD3":"6.95"
+  },
+  "american": {
+    "FIELD2":"Housemade pot roast with seasonal vegetable",
+    "FIELD3":"16.95"
+  },
+  "american": {
+    "FIELD2":"Roast beef dip",
+    "FIELD3":"11.45"
+  },
+  "american": {
+    "FIELD2":"Roast chicken and mashed potatoes",
+    "FIELD3":"7.55"
+  },
+  "american": {
+    "FIELD2":"Soup of the day",
+    "FIELD3":"8.95"
+  },
+  "american": {
+    "FIELD2":"Spaghetti and meatballs",
+    "FIELD3":"11.45"
+  },
+  "barbecue": {
+    "FIELD2":"BBQ chicken",
+    "FIELD3":"4.95"
+  },
+  "barbecue": {
+    "FIELD2":"Beef ribs (full)",
+    "FIELD3":"9.95"
+  },
+  "barbecue": {
+    "FIELD2":"Beef ribs (delux)",
+    "FIELD3":"10.45"
+  },
+  "barbecue": {
+    "FIELD2":"Beef ribs (half)",
+    "FIELD3":"6.45"
+  },
+  "barbecue": {
+    "FIELD2":"Beer",
+    "FIELD3":"7.55"
+  },
+  "barbecue": {
+    "FIELD2":"Coleslaw",
+    "FIELD3":"8.95"
+  },
+  "barbecue": {
+    "FIELD2":"Collards",
+    "FIELD3":"9.95"
+  },
+  "barbecue": {
+    "FIELD2":"Cornbread",
+    "FIELD3":"11.45"
+  },
+  "barbecue": {
+    "FIELD2":"Devilled eggs",
+    "FIELD3":"4"
+  },
+  "barbecue": {
+    "FIELD2":"German chocolate cake",
+    "FIELD3":"5.95"
+  },
+  "barbecue": {
+    "FIELD2":"Housemade chips",
+    "FIELD3":"4"
+  },
+  "barbecue": {
+    "FIELD2":"Hushpuppies",
+    "FIELD3":"3.25"
+  },
+  "barbecue": {
+    "FIELD2":"Mac and cheese",
+    "FIELD3":"6"
+  },
+  "barbecue": {
+    "FIELD2":"Pork ribs (half)",
+    "FIELD3":"6.95"
+  },
+  "barbecue": {
+    "FIELD2":"Potato salad",
+    "FIELD3":"3.95"
+  },
+  "barbecue": {
+    "FIELD2":"Pulled pork sandwich on a soft roll",
+    "FIELD3":"4.95"
+  },
+  "barbecue": {
+    "FIELD2":"Riblets",
+    "FIELD3":"10.45"
+  },
+  "cafe": {
+    "FIELD2":"Apple pie",
+    "FIELD3":"5.95"
+  },
+  "cafe": {
+    "FIELD2":"B.L.T. and Avocado Sandwich",
+    "FIELD3":"5.95"
+  },
+  "cafe": {
+    "FIELD2":"Caesar salad",
+    "FIELD3":"5.95"
+  },
+  "cafe": {
+    "FIELD2":"Cappucino",
+    "FIELD3":"3.95"
+  },
+  "cafe": {
+    "FIELD2":"Cherry cheesecake",
+    "FIELD3":"4.95"
+  },
+  "cafe": {
+    "FIELD2":"Chocolate chip cookie",
+    "FIELD3":"4.55"
+  },
+  "cafe": {
+    "FIELD2":"Cobb salad",
+    "FIELD3":"6.95"
+  },
+  "cafe": {
+    "FIELD2":"Drip coffee",
+    "FIELD3":"5.95"
+  },
+  "cafe": {
+    "FIELD2":"Eggsalad Sandwich",
+    "FIELD3":"3.95"
+  },
+  "cafe": {
+    "FIELD2":"Espresso",
+    "FIELD3":"6.95"
+  },
+  "cafe": {
+    "FIELD2":"Greek salad",
+    "FIELD3":"3.95"
+  },
+  "cafe": {
+    "FIELD2":"Hot tea",
+    "FIELD3":"2.5"
+  },
+  "cafe": {
+    "FIELD2":"Iced tea",
+    "FIELD3":"2.5"
+  },
+  "cafe": {
+    "FIELD2":"Latte",
+    "FIELD3":"4"
+  },
+  "cafe": {
+    "FIELD2":"Mango and banana smoothie",
+    "FIELD3":"3"
+  },
+  "cafe": {
+    "FIELD2":"Orange juice",
+    "FIELD3":"4.95"
+  },
+  "cafe": {
+    "FIELD2":"Quiche of the day",
+    "FIELD3":"6.95"
+  },
+  "cafe": {
+    "FIELD2":"Turkey Sandwich",
+    "FIELD3":"7.55"
+  },
+  "chinese": {
+    "FIELD2":"Almond cookie",
+    "FIELD3":"5.95"
+  },
+  "chinese": {
+    "FIELD2":"Chicken and broccoli",
+    "FIELD3":"9.95"
+  },
+  "chinese": {
+    "FIELD2":"Chow mein",
+    "FIELD3":"4.95"
+  },
+  "chinese": {
+    "FIELD2":"Egg rolls (4)",
+    "FIELD3":"3.95"
+  },
+  "chinese": {
+    "FIELD2":"General Tao's chicken",
+    "FIELD3":"5.95"
+  },
+  "chinese": {
+    "FIELD2":"Hot and Sour Soup",
+    "FIELD3":"7.55"
+  },
+  "chinese": {
+    "FIELD2":"Hunan dumplings",
+    "FIELD3":"6.5"
+  },
+  "chinese": {
+    "FIELD2":"Mongolian beef",
+    "FIELD3":"6.95"
+  },
+  "chinese": {
+    "FIELD2":"Pan-fried beef noodle",
+    "FIELD3":"7.95"
+  },
+  "chinese": {
+    "FIELD2":"Pea shoots with garlic",
+    "FIELD3":"8.95"
+  },
+  "chinese": {
+    "FIELD2":"Potstickers (6)",
+    "FIELD3":"6.95"
+  },
+  "chinese": {
+    "FIELD2":"Seafood hotpot",
+    "FIELD3":"4.95"
+  },
+  "chinese": {
+    "FIELD2":"Steamed rice",
+    "FIELD3":"5.95"
+  },
+  "chinese": {
+    "FIELD2":"Sweet and sour pork",
+    "FIELD3":"6.95"
+  },
+  "chinese": {
+    "FIELD2":"Walnut prawns",
+    "FIELD3":"4.95"
+  },
+  "chinese": {
+    "FIELD2":"Wonton Soup",
+    "FIELD3":"6.25"
+  },
+  "chinese": {
+    "FIELD2":"Young Chow fried rice",
+    "FIELD3":"6.45"
+  },
+  "czech/slovak": {
+    "FIELD2":"Apple strudel",
+    "FIELD3":"6.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Apricot dumpling with yogurt topping ",
+    "FIELD3":"3.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Balkánský Salad",
+    "FIELD3":"3.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Beef goulash",
+    "FIELD3":"8.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Chicken breast fillet schnitzel ",
+    "FIELD3":"10.45"
+  },
+  "czech/slovak": {
+    "FIELD2":"Cucumber Salad",
+    "FIELD3":"7.55"
+  },
+  "czech/slovak": {
+    "FIELD2":"Dumplings",
+    "FIELD3":"5.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Fried goose liver with onion and bread",
+    "FIELD3":"7.55"
+  },
+  "czech/slovak": {
+    "FIELD2":"Halusky with sauerkraut and belly bacon ",
+    "FIELD3":"9.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Lentil soup",
+    "FIELD3":"4.5"
+  },
+  "czech/slovak": {
+    "FIELD2":"Pickles with cabbage and cheddar",
+    "FIELD3":"10.45"
+  },
+  "czech/slovak": {
+    "FIELD2":"Pork schnitzel",
+    "FIELD3":"3.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Potato pancake with bacon",
+    "FIELD3":"5.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Potato Salad",
+    "FIELD3":"4.55"
+  },
+  "czech/slovak": {
+    "FIELD2":"Segedínský gulash and dumplings",
+    "FIELD3":"6.95"
+  },
+  "czech/slovak": {
+    "FIELD2":"Sour cabbage soup",
+    "FIELD3":"10.45"
+  },
+  "french": {
+    "FIELD2":"bavette dans son jus",
+    "FIELD3":"4.95"
+  },
+  "french": {
+    "FIELD2":"bœuf bourguignon ",
+    "FIELD3":"18"
+  },
+  "french": {
+    "FIELD2":"bouillabaisse",
+    "FIELD3":"17.5"
+  },
+  "french": {
+    "FIELD2":"coq au vin",
+    "FIELD3":"10.45"
+  },
+  "french": {
+    "FIELD2":"frites aïoli ",
+    "FIELD3":""
+  },
+  "french": {
+    "FIELD2":"moules et frites",
+    "FIELD3":"3.95"
+  },
+  "french": {
+    "FIELD2":"poulet au riesling",
+    "FIELD3":"4.95"
+  },
+  "french": {
+    "FIELD2":"quiche lorraine",
+    "FIELD3":"7.95"
+  },
+  "french": {
+    "FIELD2":"salade de chèvre chaud",
+    "FIELD3":"5.95"
+  },
+  "french": {
+    "FIELD2":"salade du midi",
+    "FIELD3":"6.95"
+  },
+  "french": {
+    "FIELD2":"salade niçoise",
+    "FIELD3":"3.95"
+  },
+  "french": {
+    "FIELD2":"sandwich croque-madame",
+    "FIELD3":"3.95"
+  },
+  "french": {
+    "FIELD2":"sandwich croque-monsieur",
+    "FIELD3":"4.55"
+  },
+  "french": {
+    "FIELD2":"soupe à l'oignon",
+    "FIELD3":"9.95"
+  },
+  "french": {
+    "FIELD2":"steak frites",
+    "FIELD3":"5.95"
+  },
+  "french": {
+    "FIELD2":"tarte pissaladière ",
+    "FIELD3":"6.95"
+  },
+  "french": {
+    "FIELD2":"tarte tatin",
+    "FIELD3":"5.95"
+  },
+  "german": {
+    "FIELD2":"Bockwurst Würstchen",
+    "FIELD3":"4.95"
+  },
+  "german": {
+    "FIELD2":"Bratwurst mit Brötchen und Sauerkraut",
+    "FIELD3":"5.95"
+  },
+  "german": {
+    "FIELD2":"Currywurst mit Brötchen",
+    "FIELD3":"5.95"
+  },
+  "german": {
+    "FIELD2":"Das Hausmannskost",
+    "FIELD3":"11.45"
+  },
+  "german": {
+    "FIELD2":"Fleishkas mit Kartoffelsalat",
+    "FIELD3":"6.95"
+  },
+  "german": {
+    "FIELD2":"Frankfurter Würstchen",
+    "FIELD3":"9.95"
+  },
+  "german": {
+    "FIELD2":"Französische Zwiebelsuppe mit Käse",
+    "FIELD3":"10.45"
+  },
+  "german": {
+    "FIELD2":"Frikadelle mit Brötchen",
+    "FIELD3":"6.95"
+  },
+  "german": {
+    "FIELD2":"Gebackener Camenbert",
+    "FIELD3":"7.55"
+  },
+  "german": {
+    "FIELD2":"Gemischter Salat",
+    "FIELD3":"4.55"
+  },
+  "german": {
+    "FIELD2":"Haus Salatteller",
+    "FIELD3":"11.45"
+  },
+  "german": {
+    "FIELD2":"Jaegerschnitzel",
+    "FIELD3":"9.95"
+  },
+  "german": {
+    "FIELD2":"Kaesepaetzle",
+    "FIELD3":"6.95"
+  },
+  "german": {
+    "FIELD2":"Kartoffel Reibekuchen mit Apfelmus",
+    "FIELD3":"5.95"
+  },
+  "german": {
+    "FIELD2":"Maultaschen mit Käse",
+    "FIELD3":"7.95"
+  },
+  "german": {
+    "FIELD2":"Sauerbraten",
+    "FIELD3":"10.45"
+  },
+  "german": {
+    "FIELD2":"Ungarische Gulaschsuppe mit Brötchen",
+    "FIELD3":"3.95"
+  },
+  "german": {
+    "FIELD2":"Wienerschnitzel",
+    "FIELD3":"8.95"
+  },
+  "german": {
+    "FIELD2":"Wurstsalad mit Bauernbrot",
+    "FIELD3":"6.95"
+  },
+  "indian": {
+    "FIELD2":"Aloo Gobi",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Basmati rice",
+    "FIELD3":"6.95"
+  },
+  "indian": {
+    "FIELD2":"Butter Chicken",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Chicken Korma",
+    "FIELD3":"7.55"
+  },
+  "indian": {
+    "FIELD2":"Chicken Tikka Masala",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Gulab Jamun",
+    "FIELD3":"8.95"
+  },
+  "indian": {
+    "FIELD2":"Kheer",
+    "FIELD3":"4.5"
+  },
+  "indian": {
+    "FIELD2":"Lamb Asparagus",
+    "FIELD3":"9.5"
+  },
+  "indian": {
+    "FIELD2":"Lamb Vindaloo",
+    "FIELD3":"7.95"
+  },
+  "indian": {
+    "FIELD2":"Mix Grill Bombay",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Mulligatawny soup",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Murgh Chicken",
+    "FIELD3":"3.95"
+  },
+  "indian": {
+    "FIELD2":"Naan stuffed with spinach and lamb",
+    "FIELD3":"4.55"
+  },
+  "indian": {
+    "FIELD2":"Plain naan",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Rogan Josh",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Saag Paneer",
+    "FIELD3":"5.95"
+  },
+  "indian": {
+    "FIELD2":"Tandoori Chicken",
+    "FIELD3":"4.95"
+  },
+  "japanese": {
+    "FIELD2":"California roll",
+    "FIELD3":"5.95"
+  },
+  "japanese": {
+    "FIELD2":"Chicken teriyaki",
+    "FIELD3":"5.95"
+  },
+  "japanese": {
+    "FIELD2":"Edamame",
+    "FIELD3":"6.95"
+  },
+  "japanese": {
+    "FIELD2":"Futomaki roll",
+    "FIELD3":""
+  },
+  "japanese": {
+    "FIELD2":"Green tea ice cream",
+    "FIELD3":"6.95"
+  },
+  "japanese": {
+    "FIELD2":"Kitsune Udon",
+    "FIELD3":"9.5"
+  },
+  "japanese": {
+    "FIELD2":"Miso soup",
+    "FIELD3":"5.95"
+  },
+  "japanese": {
+    "FIELD2":"Pork Katsu",
+    "FIELD3":"5.95"
+  },
+  "japanese": {
+    "FIELD2":"Salmon teriyaki",
+    "FIELD3":"5.95"
+  },
+  "japanese": {
+    "FIELD2":"Sashimi combo",
+    "FIELD3":"6.95"
+  },
+  "japanese": {
+    "FIELD2":"Spicy Yellowtail roll",
+    "FIELD3":"7.55"
+  },
+  "japanese": {
+    "FIELD2":"Sushi combo",
+    "FIELD3":"4.55"
+  },
+  "japanese": {
+    "FIELD2":"Teppa Maki",
+    "FIELD3":"5.95"
+  },
+  "japanese": {
+    "FIELD2":"Unagi Don",
+    "FIELD3":"7.55"
+  },
+  "japanese": {
+    "FIELD2":"Vegetable tempura",
+    "FIELD3":"3.95"
+  },
+  "japanese": {
+    "FIELD2":"Vegetarian sushi plate",
+    "FIELD3":"6.95"
+  },
+  "japanese": {
+    "FIELD2":"Wakame salad",
+    "FIELD3":"4.95"
+  },
+  "mexican": {
+    "FIELD2":"Beans and rice",
+    "FIELD3":"7.95"
+  },
+  "mexican": {
+    "FIELD2":"Beef burrito",
+    "FIELD3":"6.95"
+  },
+  "mexican": {
+    "FIELD2":"Birria",
+    "FIELD3":"7.95"
+  },
+  "mexican": {
+    "FIELD2":"Chicken burrito",
+    "FIELD3":"11.45"
+  },
+  "mexican": {
+    "FIELD2":"Chicken mole platter",
+    "FIELD3":"5.95"
+  },
+  "mexican": {
+    "FIELD2":"Chile relleno (meat)",
+    "FIELD3":"6.95"
+  },
+  "mexican": {
+    "FIELD2":"Chile relleno (vegetarian)",
+    "FIELD3":"3.95"
+  },
+  "mexican": {
+    "FIELD2":"Chips and guacamole",
+    "FIELD3":"5.95"
+  },
+  "mexican": {
+    "FIELD2":"Enchiladas",
+    "FIELD3":"4.55"
+  },
+  "mexican": {
+    "FIELD2":"Flan",
+    "FIELD3":"7.95"
+  },
+  "mexican": {
+    "FIELD2":"Jamaica Aqua Fresca",
+    "FIELD3":"2.5"
+  },
+  "mexican": {
+    "FIELD2":"Pork al pastor platter",
+    "FIELD3":"5.95"
+  },
+  "mexican": {
+    "FIELD2":"Sopa de albondigas",
+    "FIELD3":"7.95"
+  },
+  "mexican": {
+    "FIELD2":"Sopa de pollo",
+    "FIELD3":"6.95"
+  },
+  "mexican": {
+    "FIELD2":"Strawberry Aqua Fresca",
+    "FIELD3":"3.95"
+  },
+  "mexican": {
+    "FIELD2":"Super nachos with carne asada",
+    "FIELD3":"5.95"
+  },
+  "mexican": {
+    "FIELD2":"Tacos de la casa (3)",
+    "FIELD3":"4.95"
+  },
+  "mexican": {
+    "FIELD2":"Vegetarian platter",
+    "FIELD3":"4.55"
+  },
+  "pizza": {
+    "FIELD2":"Cesar salad",
+    "FIELD3":"5.95"
+  },
+  "pizza": {
+    "FIELD2":"Cheesecake",
+    "FIELD3":"6.95"
+  },
+  "pizza": {
+    "FIELD2":"Chicago-style deep dish chicken and spinach",
+    "FIELD3":"6.95"
+  },
+  "pizza": {
+    "FIELD2":"Chicago-style deep dish pepperoni and cheese",
+    "FIELD3":"7.95"
+  },
+  "pizza": {
+    "FIELD2":"Chicago-style deep dish vegetarian",
+    "FIELD3":"6.95"
+  },
+  "pizza": {
+    "FIELD2":"Chicago-style meat lover's",
+    "FIELD3":"8.95"
+  },
+  "pizza": {
+    "FIELD2":"Chocolate cake",
+    "FIELD3":"3.95"
+  },
+  "pizza": {
+    "FIELD2":"Coffee",
+    "FIELD3":"7.95"
+  },
+  "pizza": {
+    "FIELD2":"Garlic bread",
+    "FIELD3":""
+  },
+  "pizza": {
+    "FIELD2":"Greek salad",
+    "FIELD3":"5.95"
+  },
+  "pizza": {
+    "FIELD2":"Pizza of the day (slice)",
+    "FIELD3":"7.55"
+  },
+  "pizza": {
+    "FIELD2":"Thin crust anchovy and garlic and chili pepper",
+    "FIELD3":"5.95"
+  },
+  "pizza": {
+    "FIELD2":"Thin crust broccoli, chicken, and mozarella",
+    "FIELD3":"3.95"
+  },
+  "pizza": {
+    "FIELD2":"Thin crust margherita",
+    "FIELD3":"4.55"
+  },
+  "pizza": {
+    "FIELD2":"Thin crust pepperoni",
+    "FIELD3":"6.95"
+  },
+  "pizza": {
+    "FIELD2":"Thin crust quattro stagione",
+    "FIELD3":"4.95"
+  },
+  "pizza": {
+    "FIELD2":"Thin crust sausage and guanciale bacon",
+    "FIELD3":"4.95"
+  },
+  "thai": {
+    "FIELD2":"Basil duck with rice",
+    "FIELD3":"4.55"
+  },
+  "thai": {
+    "FIELD2":"Curry salmon",
+    "FIELD3":"12.45"
+  },
+  "thai": {
+    "FIELD2":"Egg rolls (4)",
+    "FIELD3":"5.95"
+  },
+  "thai": {
+    "FIELD2":"Fried banana and ice cream",
+    "FIELD3":"11.45"
+  },
+  "thai": {
+    "FIELD2":"Green curry with chicken",
+    "FIELD3":"3.95"
+  },
+  "thai": {
+    "FIELD2":"Green curry with pork",
+    "FIELD3":"4.55"
+  },
+  "thai": {
+    "FIELD2":"Hot tea",
+    "FIELD3":"2.5"
+  },
+  "thai": {
+    "FIELD2":"Onion pancake",
+    "FIELD3":"6.95"
+  },
+  "thai": {
+    "FIELD2":"Pad See Ew",
+    "FIELD3":"4.95"
+  },
+  "thai": {
+    "FIELD2":"Pad Thai",
+    "FIELD3":"6.95"
+  },
+  "thai": {
+    "FIELD2":"Pumpkin curry",
+    "FIELD3":"6.95"
+  },
+  "thai": {
+    "FIELD2":"Red curry with chicken",
+    "FIELD3":"8.95"
+  },
+  "thai": {
+    "FIELD2":"Red curry with pork",
+    "FIELD3":"9.95"
+  },
+  "thai": {
+    "FIELD2":"Sticky rice with mango",
+    "FIELD3":"6.95"
+  },
+  "thai": {
+    "FIELD2":"Thai iced coffee",
+    "FIELD3":"6.95"
+  },
+  "thai": {
+    "FIELD2":"Thai iced tea",
+    "FIELD3":"3.95"
+  },
+  "thai": {
+    "FIELD2":"Tofu salad rolls",
+    "FIELD3":"10.45"
+  },
+  "vegetarian": {
+    "FIELD2":"bean and cheese burrito",
+    "FIELD3":"6.95"
+  },
+  "vegetarian": {
+    "FIELD2":"cheese tortellini in tomato sauce",
+    "FIELD3":"3.95"
+  },
+  "vegetarian": {
+    "FIELD2":"coffee",
+    "FIELD3":"6.95"
+  },
+  "vegetarian": {
+    "FIELD2":"falafel wrap with tabbouleh",
+    "FIELD3":"4.95"
+  },
+  "vegetarian": {
+    "FIELD2":"flourless chocolate cake",
+    "FIELD3":"8.95"
+  },
+  "vegetarian": {
+    "FIELD2":"garden fresh salad",
+    "FIELD3":"6.5"
+  },
+  "vegetarian": {
+    "FIELD2":"happy buddha stir fry",
+    "FIELD3":"10.45"
+  },
+  "vegetarian": {
+    "FIELD2":"hummus appetizer plate",
+    "FIELD3":"8"
+  },
+  "vegetarian": {
+    "FIELD2":"lentil burger",
+    "FIELD3":"6"
+  },
+  "vegetarian": {
+    "FIELD2":"lentil soup",
+    "FIELD3":"4.5"
+  },
+  "vegetarian": {
+    "FIELD2":"pasta with olives and marinated lemon",
+    "FIELD3":"6.95"
+  },
+  "vegetarian": {
+    "FIELD2":"spinach and cheese wrap",
+    "FIELD3":"5.95"
+  },
+  "vegetarian": {
+    "FIELD2":"tea",
+    "FIELD3":"5.95"
+  },
+  "vegetarian": {
+    "FIELD2":"toasted sandwich with grilled eggplant",
+    "FIELD3":"8.95"
+  },
+  "vegetarian": {
+    "FIELD2":"tofu chicken wrap",
+    "FIELD3":"9.95"
+  },
+  "vegetarian": {
+    "FIELD2":"tomato and cheese sandwich",
+    "FIELD3":"11.45"
+  },
+  "vegetarian": {
+    "FIELD2":"vegetable stew",
+    "FIELD3":"5.95"
+  }
+}
