@@ -3,6 +3,7 @@
 foodMeApp.controller('RestaurantsController',
     function RestaurantsController($scope, customer, $location, Restaurant) {
 
+    /*redirecting to customer url ie login page if user address is empty*/
   if (!customer.address) {
     $location.url('/customer');
   }
