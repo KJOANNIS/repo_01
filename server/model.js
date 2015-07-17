@@ -22,16 +22,13 @@ var parseDays = function(str) {
   });
 };
 
-
 var Restaurant = function(data) {
   // defaults
   this.days = [1, 2, 3, 4, 5, 6];
   this.menuItems = [];
   this.price = 0;
   this.rating = 0;
-
   this.update(data);
-
   this.id = this.id || idFromName(this.name);
 };
 
@@ -72,7 +69,6 @@ Restaurant.fromArray = function(data) {
   });
 };
 
-
 var MenuItem = function(data) {
   this.name = data.name;
   this.price = data.price;
@@ -85,5 +81,7 @@ MenuItem.fromArray = function(data) {
   });
 };
 
+/* export defines what require returns */
+/* multiple instance can be created */
 exports.Restaurant = Restaurant;
 exports.MenuItem = MenuItem;

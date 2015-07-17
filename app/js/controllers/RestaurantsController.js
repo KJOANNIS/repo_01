@@ -1,3 +1,4 @@
+/*Default page*/
 'use strict';
 
 foodMeApp.controller('RestaurantsController',
@@ -14,6 +15,16 @@ foodMeApp.controller('RestaurantsController',
     rating: null
   };
 
+    /*
+     { 'get':    {method:'GET'},
+     'save':   {method:'POST'},
+     'query':  {method:'GET', isArray:true},
+     'remove': {method:'DELETE'},
+     'delete': {method:'DELETE'} };
+
+     Given a template /path/:verb and parameter {verb:'greet', salutation:'Hello'}
+     results in URL /path/greet?salutation=Hello.
+     */
   var allRestaurants = Restaurant.query(filterAndSortRestaurants);
   $scope.$watch('filter', filterAndSortRestaurants, true);
 

@@ -4,8 +4,8 @@ var fs = require('fs');
 var open = require('open');
 
 //local modules
-var RestaurantRecord = require('./model').Restaurant; //only one instance can be created
-var MemoryStorage = require('./storage').Memory;      //only one instance can be created
+var RestaurantRecord = require('./model').Restaurant; //since we need to call once
+var MemoryStorage = require('./storage').Memory;      //since we need to call once
 
 var API_URL = '/api/restaurant';
 var API_URL_ID = API_URL + '/:id';
@@ -19,10 +19,8 @@ var removeMenuItems = function(restaurant) {
       clone[key] = restaurant[key];
     }
   });
-
   return clone;
 };
-
 
 //multiple instance can be created
 exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
@@ -105,8 +103,6 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
   // only for running e2e tests
   app.use('/test/', express.static(TEST_DIR));
 
-
-  // start the server
   // read the data from json and start the server
   fs.readFile(DATA_FILE, function(err, data) {
     JSON.parse(data).forEach(function(restaurant) {

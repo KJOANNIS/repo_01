@@ -15,7 +15,6 @@ var MemoryStorage = function() {
         return storage[i];
       }
     }
-
     return null;
   };
 
@@ -26,9 +25,9 @@ var MemoryStorage = function() {
         return true;
       }
     }
-
     return false;
   };
 };
 
+/*Multiple instance can be created */
 exports.Memory = MemoryStorage;
