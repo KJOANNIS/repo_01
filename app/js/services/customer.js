@@ -1,6 +1,9 @@
 'use strict';
 
 /*https://docs.angularjs.org/api/ng/type/$rootScope.Scope*/
+/*Other components (like services) only have access to the $rootScope service.*/
+
+//used for sharing functions and objects across application
 foodMeApp.factory('customer', function($rootScope, localStorage) {
   var LOCAL_STORAGE_ID = 'fmCustomer',
       customerString = localStorage[LOCAL_STORAGE_ID];
@@ -9,7 +12,6 @@ foodMeApp.factory('customer', function($rootScope, localStorage) {
     name: undefined,
     address: undefined
   };
-
 
    /*$watch(watchExpression, listener, [objectEquality]);
 

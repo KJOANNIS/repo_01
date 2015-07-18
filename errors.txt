@@ -1,0 +1,36 @@
+user : "http://stackoverflow.com/users/651480/bmleite"
+
+Uncaught Error: [$injector:modulerr]  : <html ng-app="myApp"> if myApp is done
+
+Error: [ng:areq] Argument 'bodyController' is not a function, got undefined :<body ng-controller="bodyController">   
+cannot use controllers without a module no more.
+
+
+
+
+link: "http://stackoverflow.com/questions/25895235/angularjs-error-ngareq-argument-homecontroller-is-not-a-function-got-und"
+This creates a new module/app:
+var myApp = angular.module('myApp',[]);
+While this accesses an already created module (notice the omission of the second argument):
+var myApp = angular.module('myApp');
+Since you use the first approach on both scripts you are basically overriding the module you previously created.
+On the second script being loaded, use var myApp = angular.module('myApp');
+
+
+link:http://java.dzone.com/articles/angularjs-introducing-modules
+controller with dependency service syntax
+
+
+
+
+There is much confusion among newcomers to AngularJS as to why the $http service shorthand functions ($http.post(), etc.)
+don’t appear to be swappable with the jQuery equivalents (jQuery.post(), etc.)
+The difference is in how jQuery and AngularJS serialize and transmit the data. 
+Fundamentally, the problem lies with your server language of choice being unable to understand AngularJS’s transmission natively ... 
+By default, jQuery transmits data using Content-Type: x-www-form-urlencoded and the familiar foo=bar&baz=moe serialization. 
+AngularJS, however, transmits data using Content-Type: application/json and { "foo": "bar", "baz": "moe" } 
+JSON serialization, which unfortunately some Web server languages—notably PHP—do not unserialize natively.
+
+
+http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/
+use of scopes

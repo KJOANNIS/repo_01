@@ -9,6 +9,8 @@
 /*ngResource provides services like $service*/
 /*https://docs.angularjs.org/api/ngResource*/
 
+/*http://www.bennadel.com/blog/2715-services-and-factories-are-instantiated-on-demand-in-angularjs.htm*/
+
 var foodMeApp = angular.module('foodMeApp', ['ngRoute','ngResource']);
 
 /*https://docs.angularjs.org/api/ngRoute/provider/$routeProvider*/
