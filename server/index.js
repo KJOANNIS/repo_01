@@ -36,17 +36,17 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
   // parse body into req.body
   app.use(express.bodyParser());
 
-
   // API
   app.get(API_URL, function(req, res, next) {
       /*http://api.jquery.com/jquery.map/*/
     res.send(200, storage.getAll().map(removeMenuItems));
   });
 
-
+    /*Add new restaurant which is currently not implemented*/
   app.post(API_URL, function(req, res, next) {
     var restaurant = new RestaurantRecord(req.body);
     var errors = [];
+      console.log("ERERER");
 
     if (restaurant.validate(errors)) {
       storage.add(restaurant);
@@ -56,15 +56,14 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
     return res.send(400, {error: errors});
   });
 
+   /*On successful payment send the response with date as order Id :)*/
   app.post(API_URL_ORDER, function(req, res, next) {
-    console.log(req.body)
     return res.send(201, { orderId: Date.now()});
   });
 
-
+    /*get the menu of the restaurant based on it's id*/
   app.get(API_URL_ID, function(req, res, next) {
     var restaurant = storage.getById(req.params.id);
-
     if (restaurant) {
       return res.send(200, restaurant);
     }
@@ -73,6 +72,7 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
   });
 
 
+   /*update of restaurant details*/
   app.put(API_URL_ID, function(req, res, next) {
     var restaurant = storage.getById(req.params.id);
     var errors = [];
@@ -92,7 +92,9 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
   });
 
 
+    /*delete of order*/
   app.del(API_URL_ID, function(req, res, next) {
+      console.log(req.params.id + "  TTTTTT");
     if (storage.deleteById(req.params.id)) {
       return res.send(204, null);
     }
@@ -112,7 +114,6 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
 
     app.listen(PORT, function() {
       open('http://localhost:' + PORT + '/');
-      // console.log('Go to http://localhost:' + PORT + '/');
     });
   });
 
