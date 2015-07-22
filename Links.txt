@@ -1,0 +1,4 @@
+http://stackoverflow.com/questions/14688290/inject-dependencies-in-run-method-of-the-module-in-angularjs
+http://stackoverflow.com/questions/22216441/what-is-the-difference-between-scope-root-and-rootscope
+http://jimhoskins.com/2012/12/17/angularjs-and-apply.html
+http://tutorials.jenkov.com/angularjs/watch-digest-apply.html

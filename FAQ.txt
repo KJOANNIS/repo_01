@@ -3,27 +3,24 @@ https://docs.angularjs.org/guide/introduction
 AngularJS is a structural framework for dynamic web apps. It lets use HTML as your template language 
 and extend HTML's syntax to express your application's components.  line <input ng-model =""></input> insted of value syntax model is there 
 
-The impedance(measure of the opposition) mismatch between dynamic applications and static documents solved with:
-a>library -E.g.jQuery. and 
-b>frameworks - a particular implementation of a web application, where your code fills in the details. 
-The framework is in charge and it calls into your code when it needs something app specific. E.g., durandal, ember, etc.
-
-It attempts to minimize the impedance(measure of the opposition) by creating new HTML constructs using directives.
+The impedance(measure of the opposition) mismatch between dynamic applications and static documents solved to great extent 
+by creating new HTML constructs using directives.
 a>Data binding, as in {{}}.
 b>DOM control structures for repeating, showing and hiding DOM fragments.
 c>Support for forms and form validation.
 d>Attaching new behavior to DOM elements, such as DOM event handling.
 e>Grouping of HTML into reusable components.
 
-Client side MVC (Model View Controller) frameworks like Ember and AngularJS separate your data model from its presentation. 
-Your model becomes the single source of truth. If you change it, your HTML template changes automatically. 
+Client side MVC (Model View Controller) frameworks separate data model from its presentation. 
+model becomes the single source of truth. If you change it, your HTML template changes automatically. 
 If you want to know its current value, you read it from the model instead of the DOM.
 
 What is module?
 module as a container for the different parts of your app – controllers, services, filters, directives, etc.
-During bootstrap process collection of configuration and run blocks get applied to the application .
+During bootstrap process configuration and run blocks get applied to the application .
 a>Configuration blocks( provider-injector)You can only inject Providers (not instances)
 config(function($provide, $compileProvider, $filterProvider))
+all of the services have been configured and the injector has been created.
 b>Run blocks (instance-injector)You can only inject instances (not Providers)
 get executed after the injector is created and are used to kickstart the application. 
 If you truly need a service to be instantiated during the lifetime of an application, regardless of the user behavior, 
@@ -56,6 +53,9 @@ Scopes provide APIs ($apply) to propagate any model changes into the view
 Scope is the glue between application controller and the view. 
 During the template linking phase the directives set up $watch expressions on the scope. 
 The $watch allows the directive to render the updated value to the DOM.
+The location where the root scope is attached to the DOM is defined by the location of ng-app directive
+
+What is Scope Life Cycle?
 
 What is service?
 https://docs.angularjs.org/guide/services
@@ -65,6 +65,16 @@ Angular services are substitutable objects that are wired together using depende
 What is data binding?
 https://docs.angularjs.org/guide/databinding
 Data-binding in Angular apps is the automatic synchronization of data between the model and view components.
+
+What is dependency injection?
+Dependency Injection (DI) is a software design pattern that deals with how components get hold of their dependencies.
+The Angular injector subsystem is in charge of creating components, resolving their dependencies, and providing them to other components as requested.
+Components such as services, directives, filters, and animations can be injected with "service" and "value" components as dependencies like $rootScope .
+Controllers can be injected with any of the "service" and "value" with special dependencies like $scope.
+run method can be injected with "service", "value" and "constant" components as dependencies.
+config method can be injected with "provider" and "constant" components as dependencies
+
+using inline array , $inject ,function parameter names
 
 Why not Dom manipulation
 http://ng-learn.org/2014/01/Dom-Manipulations/
