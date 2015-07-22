@@ -1,9 +1,9 @@
 What is Angular
 https://docs.angularjs.org/guide/introduction
 AngularJS is a structural framework for dynamic web apps. It lets use HTML as your template language 
-and extend HTML's syntax to express your application's components.  line <input ng-model =""></input> insted of value syntax model is there 
+and extend HTML's syntax to express your applications components.  line <input ng-model =""></input> insted of "value" syntax "ng-model" is there. 
 
-The impedance(measure of the opposition) mismatch between dynamic applications and static documents solved to great extent 
+The impedance(measure of the opposition) mismatch between dynamic applications and static documents solved to great extent. 
 by creating new HTML constructs using directives.
 a>Data binding, as in {{}}.
 b>DOM control structures for repeating, showing and hiding DOM fragments.
@@ -20,7 +20,8 @@ module as a container for the different parts of your app – controllers, service
 During bootstrap process configuration and run blocks get applied to the application .
 a>Configuration blocks( provider-injector)You can only inject Providers (not instances)
 config(function($provide, $compileProvider, $filterProvider))
-all of the services have been configured and the injector has been created.
+all of the services configured and the injector has been created.
+
 b>Run blocks (instance-injector)You can only inject instances (not Providers)
 get executed after the injector is created and are used to kickstart the application. 
 If you truly need a service to be instantiated during the lifetime of an application, regardless of the user behavior, 
@@ -38,11 +39,11 @@ Here's the calling order:
 What is controller?
 https://docs.angularjs.org/guide/controller
 defined by JavaScript constructor function used to augment(adding to) the Angular Scope($rootScope).
-When a Controller is attached to DOM via the ng-controller directive, Angular will instantiate a new Controller object, usingController's constructor function. 
+When a Controller is attached to DOM via the ng-controller directive, Angular will instantiate a new Controller object, using Controller's constructor function. 
 A new child scope as $scope will be created and made available as an injectable parameter to the Controller's constructor function.
 
 What is directive ?
-Directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's HTML compiler $compile)
+Directives are markers on a DOM element (such as an attribute, element name, CSS class) that tell AngularJS's HTML compiler $compile)
 to attach a behavior or even transform the DOM element and its children.
 For AngularJS, "compilation" means attaching event listeners to the HTML to make it interactive.
 
@@ -67,8 +68,8 @@ https://docs.angularjs.org/guide/databinding
 Data-binding in Angular apps is the automatic synchronization of data between the model and view components.
 
 What is dependency injection?
-Dependency Injection (DI) is a software design pattern that deals with how components get hold of their dependencies.
-The Angular injector subsystem is in charge of creating components, resolving their dependencies, and providing them to other components as requested.
+Dependency Injection (DI) is a software design pattern that deals with how components hold of their dependencies.
+The Angular injector is in charge of creating components, resolving their dependencies, and providing them to other components as requested.
 Components such as services, directives, filters, and animations can be injected with "service" and "value" components as dependencies like $rootScope .
 Controllers can be injected with any of the "service" and "value" with special dependencies like $scope.
 run method can be injected with "service", "value" and "constant" components as dependencies.
@@ -76,5 +77,13 @@ config method can be injected with "provider" and "constant" components as depen
 
 using inline array , $inject ,function parameter names
 
-Why not Dom manipulation
+Why not Dom manipulation by angularJs?
 http://ng-learn.org/2014/01/Dom-Manipulations/
+
+What is digest cycle?
+http://www.sitepoint.com/understanding-angulars-apply-digest/
+http://onehungrymind.com/notes-on-angularjs-scope-life-cycle/	
+if you change any model outside of the Angular context, then you need to inform Angular of the changes by calling $apply() manually
+which triggers a $digest cycle. 
+Angular doesn’t directly call $digest(). Instead, it calls $scope.$apply(), which in turn calls $rootScope.$digest(). 
+As a result a digest cycle starts at the $rootScope, and subsequently visits all the child scopes calling the watchers along the way.

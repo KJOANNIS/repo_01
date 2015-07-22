@@ -2,6 +2,7 @@
 
 foodMeApp.directive('fmCheckboxList', function() {
   return {
+      /*https://docs.angularjs.org/api/ng/directive/ngModel*/
     require: 'ngModel',
     link: function(scope, elm, attr, ngModel) {
 
