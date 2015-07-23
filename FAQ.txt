@@ -56,7 +56,6 @@ During the template linking phase the directives set up $watch expressions on th
 The $watch allows the directive to render the updated value to the DOM.
 The location where the root scope is attached to the DOM is defined by the location of ng-app directive
 
-What is Scope Life Cycle?
 
 What is service?
 https://docs.angularjs.org/guide/services
@@ -79,6 +78,9 @@ using inline array , $inject ,function parameter names
 
 Why not Dom manipulation by angularJs?
 http://ng-learn.org/2014/01/Dom-Manipulations/
+
+What is Scope Life Cycle?
+http://onehungrymind.com/notes-on-angularjs-scope-life-cycle/
 
 What is digest cycle?
 http://www.sitepoint.com/understanding-angulars-apply-digest/
