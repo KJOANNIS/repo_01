@@ -1,6 +1,5 @@
 <fm-deliver-to></fm-deliver-to>
 
-
 <div class="row-fluid">
 
   <div class="span3 fm-panel">
@@ -9,6 +8,7 @@
     <form>
 
       <h5>Rating</h5>
+        <!--http://stackoverflow.com/questions/21453697/angularjs-access-parent-scope-from-child-controller-->
 
       <fm-rating ng-model="$parent.filter.rating"></fm-rating>
 
@@ -54,10 +54,14 @@
           <p>{{restaurant.description}}</p>
         </td>
         <td>
-          <fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating>
+          <!--<fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating>-->
+            <!--no need of parent to get the ratings-->
+            <fm-rating ng-model="restaurant.rating" readonly="true"></fm-rating>
         </td>
         <td>
-          <fm-rating ng-model="$parent.restaurant.price" symbol="$" readonly="true" ></fm-rating>
+          <!--<fm-rating ng-model="$parent.restaurant.price" symbol="$" readonly="true" ></fm-rating>-->
+            <!--no need of parent to get the price-->
+            <fm-rating ng-model="restaurant.price" symbol="$" readonly="true" ></fm-rating>
         </td>
       </tr>
     </table>

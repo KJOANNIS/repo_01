@@ -36,17 +36,16 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
   // parse body into req.body
   app.use(express.bodyParser());
 
-  // API
+  // To send new set of restaurant using map
   app.get(API_URL, function(req, res, next) {
       /*http://api.jquery.com/jquery.map/*/
     res.send(200, storage.getAll().map(removeMenuItems));
   });
 
-    /*Add new restaurant which is currently not implemented*/
+  /*Add new restaurant which is currently not implemented*/
   app.post(API_URL, function(req, res, next) {
     var restaurant = new RestaurantRecord(req.body);
     var errors = [];
-      console.log("ERERER");
 
     if (restaurant.validate(errors)) {
       storage.add(restaurant);
@@ -57,7 +56,7 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
   });
 
    /*On successful payment send the response with date as order Id :)*/
-  app.post(API_URL_ORDER, function(req, res, next) {
+   app.post(API_URL_ORDER, function(req, res, next) {
     return res.send(201, { orderId: Date.now()});
   });
 
