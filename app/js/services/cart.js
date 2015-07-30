@@ -7,7 +7,7 @@ foodMeApp.service('cart', function Cart(localStorage, customer, $rootScope, $htt
     /*adding the selected item to cart with args (menuItem, restaurant)*/
   self.add = function(item, restaurant) {
       /*check whether cart is null or not */
-      /*if not add to the restaurant id ,name nad description to cart else not add */
+      /*if not add to the restaurant id ,name and description to cart */
     if (!self.restaurant || !self.restaurant.id) {
       self.restaurant = {
         id: restaurant.id,
@@ -32,8 +32,6 @@ foodMeApp.service('cart', function Cart(localStorage, customer, $rootScope, $htt
           item = null;
         }
       });
-
-        debugger;
       /*If item is getting added first time in cart or cart was empty*/
       if (item) {
         /*https://docs.angularjs.org/api/ng/function/angular.copy*/

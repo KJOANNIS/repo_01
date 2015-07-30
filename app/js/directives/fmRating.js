@@ -1,5 +1,8 @@
 'use strict';
 
+/*https://thinkster.io/egghead/isolate-scope-at*/
+/*https://thinkster.io/egghead/isolate-scope-am*/
+
 foodMeApp.directive('fmRating', function() {
   return {
     restrict: 'E',
@@ -8,9 +11,10 @@ foodMeApp.directive('fmRating', function() {
       max: '@',
       readonly: '@'
     },
+    /*to look for the controller on just its own element).*/
     require: 'ngModel',
     link: function(scope, element, attrs, ngModel) {
-
+        console.log(scope.max);
       attrs.max = scope.max = parseInt(scope.max || 5, 10);
 
       if (!attrs.symbol) {

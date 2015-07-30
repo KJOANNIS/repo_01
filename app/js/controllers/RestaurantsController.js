@@ -25,13 +25,15 @@ foodMeApp.controller('RestaurantsController',
      Given a template /path/:verb and parameter {verb:'greet', salutation:'Hello'}
      results in URL /path/greet?salutation=Hello.
      */
+
+     /*filterAndSortRestaurants is the function call back after getting back the response from server*/
   var allRestaurants = Restaurant.query(filterAndSortRestaurants);
   $scope.$watch('filter', filterAndSortRestaurants, true);
-
   function filterAndSortRestaurants() {
     $scope.restaurants = [];
 
-    // filter
+    //filter
+    /*https://docs.angularjs.org/api/ng/function/angular.forEach*/
     angular.forEach(allRestaurants, function(item, key) {
       if (filter.price && filter.price !== item.price) {
         return;

@@ -4,6 +4,7 @@
 /*Other components (like services) only have access to the $rootScope service.*/
 
 //used for sharing functions and objects across application
+/*http://stackoverflow.com/questions/15666048/service-vs-provider-vs-factory*/
 foodMeApp.factory('customer', function($rootScope, localStorage) {
   var LOCAL_STORAGE_ID = 'fmCustomer',
       customerString = localStorage[LOCAL_STORAGE_ID];
