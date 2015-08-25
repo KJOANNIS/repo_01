@@ -12,12 +12,14 @@
 
       <!--<fm-rating ng-model="$parent.filter.rating"></fm-rating>-->
         <!--https://docs.angularjs.org/guide/directive-->
+        <!--readonly is true as sorting is not required based on readonly star -->
         <fm-rating ng-model="filter.rating"></fm-rating>
 
 
       <h5>Price</h5>
 
       <!--<fm-rating ng-model="$parent.filter.price" symbol="$"></fm-rating>-->
+        <!--readonly is true as sorting is not required based on readonly price -->
         <fm-rating ng-model="filter.price" symbol="$"></fm-rating>
 
 
@@ -59,11 +61,13 @@
         <td>
           <!--<fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating>-->
             <!--no need of parent to get the ratings-->
+            <!--readonly is true as sorting is not required based on readonly star -->
             <fm-rating ng-model="restaurant.rating" readonly="true"></fm-rating>
         </td>
         <td>
           <!--<fm-rating ng-model="$parent.restaurant.price" symbol="$" readonly="true" ></fm-rating>-->
             <!--no need of parent to get the price-->
+            <!--sorting is not required based on readonly price-->
             <fm-rating ng-model="restaurant.price" symbol="$" readonly="true" ></fm-rating>
         </td>
       </tr>

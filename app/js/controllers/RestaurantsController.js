@@ -9,6 +9,7 @@ foodMeApp.controller('RestaurantsController',
     $location.url('/customer');
   }
 
+  /*for sorting purpose*/
   var filter = $scope.filter = {
     cuisine: [],
     price: null,
@@ -35,6 +36,7 @@ foodMeApp.controller('RestaurantsController',
     //filter
     /*https://docs.angularjs.org/api/ng/function/angular.forEach*/
     angular.forEach(allRestaurants, function(item, key) {
+        console.log(filter.price + " ____ " + filter.rating);
       if (filter.price && filter.price !== item.price) {
         return;
       }
@@ -75,13 +77,12 @@ foodMeApp.controller('RestaurantsController',
     }
   };
 
-
   $scope.sortIconFor = function(key) {
     if (filter.sortBy !== key) {
       return '';
     }
 
-    return filter.sortAsc ? '\u25B2' : '\u25BC';
+    return filter.sortAsc ? '\u25B2' : '\u25BC';  //sort on basic of ratings stars/dollars
   };
 
 
@@ -100,5 +101,4 @@ foodMeApp.controller('RestaurantsController',
     thai: 'Thai',
     vegetarian: 'Vegetarian'
   };
-
 });
