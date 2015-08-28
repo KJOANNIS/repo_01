@@ -22,6 +22,7 @@ var parseDays = function(str) {
   });
 };
 
+//No prototype as each Restaurant should have it's own data
 var Restaurant = function(data) {
   // defaults
   this.days = [1, 2, 3, 4, 5, 6];
@@ -80,6 +81,7 @@ MenuItem.fromArray = function(data) {
     price: parseFloat(data[2])
   });
 };
+
 
 /* export defines what require returns */
 /* multiple instance can be created */

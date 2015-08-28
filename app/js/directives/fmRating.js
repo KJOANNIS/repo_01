@@ -4,7 +4,6 @@
 /*https://thinkster.io/egghead/isolate-scope-am*/
 
 foodMeApp.directive('fmRating', function() {
-    debugger;
   return {
     restrict: 'E',
     scope: {

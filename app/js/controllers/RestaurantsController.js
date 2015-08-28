@@ -36,7 +36,6 @@ foodMeApp.controller('RestaurantsController',
     //filter
     /*https://docs.angularjs.org/api/ng/function/angular.forEach*/
     angular.forEach(allRestaurants, function(item, key) {
-        console.log(filter.price + " ____ " + filter.rating);
       if (filter.price && filter.price !== item.price) {
         return;
       }
