@@ -32,7 +32,8 @@ var Restaurant = function(data) {
   this.update(data);
   this.id = this.id || idFromName(this.name);
 };
-
+/*http://stackoverflow.com/questions/7440001/iterate-over-object-keys-in-node-js*/
+/*https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach*/
 Restaurant.prototype.update = function(data) {
   Object.keys(data).forEach(function(key) {
     if (key === 'price' || key === 'rating' && isString(data[key])) {
