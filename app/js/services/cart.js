@@ -18,7 +18,6 @@ foodMeApp.service('cart', function Cart(localStorage, customer, $rootScope, $htt
 
      /*either add the item or if all ready there increment the quantity*/
     if (self.restaurant.id == restaurant.id) {
-
         /*if cart is not empty search for that particular item*/
       self.items.forEach(function(cartItem) {
 
@@ -37,6 +36,7 @@ foodMeApp.service('cart', function Cart(localStorage, customer, $rootScope, $htt
         /*https://docs.angularjs.org/api/ng/function/angular.copy*/
         item = angular.copy(item);
         item.qty = 1;
+		console.log(self.items);
         self.items.push(item);
       }
     }
@@ -61,6 +61,7 @@ foodMeApp.service('cart', function Cart(localStorage, customer, $rootScope, $htt
 
 
     /*Total bill after order*/
+  /*https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce*/
   self.total = function() {
     return self.items.reduce(function(sum, item) {
       return sum + Number(item.price * item.qty);
@@ -90,21 +91,25 @@ foodMeApp.service('cart', function Cart(localStorage, customer, $rootScope, $htt
   };
 
 
+  /*multiple items will be added so Array of jsonObject*/
   createPersistentProperty('items', 'fmCartItems', Array);
-  createPersistentProperty('restaurant', 'fmCartRestaurant', Object);
-  self.payment = {}; // don't keep CC info in localStorage
 
+  /*restaurant will be added so JsonObject*/
+  createPersistentProperty('restaurant', 'fmCartRestaurant', Object);
+
+  // don't keep CC info in localStorage
+  self.payment = {};
 
   function createPersistentProperty(localName, storageName, Type) {
     var json = localStorage[storageName];
 
     self[localName] = json ? JSON.parse(json) : new Type;
-
-      /*https://docs.angularjs.org/api/ng/type/$rootScope.Scope*/
+    /*https://docs.angularjs.org/api/ng/type/$rootScope.Scope*/
 
     $rootScope.$watch(
         function() { return self[localName]; },
         function(value) {
+          console.log(value + " ______" );
           if (value) {
             localStorage[storageName] = JSON.stringify(value);
           }

@@ -50,6 +50,8 @@
         <th><a href ng-click="sortBy('price')">Price {{sortIconFor('price')}}</a></th>
         <th><a href ng-click="sortBy('rating')">Rating {{sortIconFor('rating')}}</a></th>
       </tr>
+
+      <!--call menuController using the  path-->
       <tr ng-repeat="restaurant in restaurants">
         <td>
           <a href="#/menu/{{restaurant.id}}">
